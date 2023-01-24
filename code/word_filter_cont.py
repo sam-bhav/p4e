@@ -13,11 +13,10 @@ file_handle = open(fname)
 count = 0
 
 for each_line in file_handle:
-    if not each_line.startswith("From"):
+    if not each_line.startswith("From "):
         continue
     else:    
         words=each_line.split()
-        if len(words)>=3:
-            print(words[1])
-            count+=1
+        print(words[1])          
+        count+=1
 print("There were", count, "lines in the file with From as the first word")

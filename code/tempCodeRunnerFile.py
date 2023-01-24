@@ -1,3 +1,3 @@
-friends = [ 'Joseph', 'Glenn', 'Sally' ]
-friends.sort()
-print(friends[0])
+c = [1 , 42, 100]
+c.sort(reverse=True)
+print(c)
