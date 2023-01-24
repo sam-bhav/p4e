@@ -1,2 +1,3 @@
-largest = 0
-# smallest = 0
+friends = [ 'Joseph', 'Glenn', 'Sally' ]
+friends.sort()
+print(friends[0])
