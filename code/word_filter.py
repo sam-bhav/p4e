@@ -1,15 +1,12 @@
 fname = input("Enter file name: ")
-filehandle = open(fname)
+file_handle = open(fname)
 word_list = list()
-for line in filehandle:
-    words=line.rstrip()
+for line in file_handle:
+    words=line.split()
     
     for selected_word in words:
-        if selected_word != line:
+        if selected_word not in word_list:
             word_list.append(selected_word)
 
-    
-    
-    
-
-print(word_list.sort())
+word_list.sort()
+print(word_list)
