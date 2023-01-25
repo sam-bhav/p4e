@@ -1,3 +1,2 @@
-c = [1 , 42, 100]
-c.sort(reverse=True)
-print(c)
+days = ('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')
+print(days[2])
